@@ -2,6 +2,7 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ESSENZIALE PER MOBILE -->
   <title>G-START LINK</title>
 
   <!-- Iconify CDN -->
@@ -20,26 +21,28 @@
       min-height: 100vh;
     }
 
+    /* TITOLO SUPER VISIBILE SU MOBILE */
     h1 {
-      font-size: 40px;
+      font-size: clamp(40px, 10vw, 70px);
       margin-bottom: 40px;
-      letter-spacing: 3px;
+      letter-spacing: 4px;
       text-transform: uppercase;
       color: #1a1a1a;
-      text-shadow: 0px 2px 4px rgba(0,0,0,0.15);
+      text-shadow: 0px 3px 6px rgba(0,0,0,0.2);
     }
 
+    /* BOTTONI GRANDI PER SMARTPHONE */
     .btn {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 18px;
-      width: 90%;
-      max-width: 360px;
-      margin: 18px auto;
-      padding: 20px;
-      border-radius: 18px;
-      font-size: 22px;
+      gap: 20px;
+      width: 95%;
+      max-width: 420px;
+      margin: 20px auto;
+      padding: 22px;
+      border-radius: 20px;
+      font-size: clamp(20px, 5vw, 32px);
       text-decoration: none;
       color: #fff;
       font-weight: bold;
@@ -71,9 +74,9 @@
       border: 2px solid #1a1a1a;
     }
 
-    /* ICON RESPONSIVE */
+    /* ICONE DAVVERO GRANDI SU TELEFONO */
     .iconify {
-      font-size: clamp(40px, 8vw, 70px);
+      font-size: clamp(50px, 12vw, 90px);
     }
   </style>
 </head>
