@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>G-START LINK</title>
+
+  <!-- Iconify CDN -->
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f5e6d3, #f7d9b9); /* sfondo premium */
+      color: #000;
+      text-align: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    /* TITOLO STILIZZATO */
+    h1 {
+      font-size: 40px;
+      margin-bottom: 40px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #1a1a1a;
+      text-shadow: 0px 2px 4px rgba(0,0,0,0.15);
+    }
+
+    /* BOTTONI */
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 85%;
+      max-width: 330px;
+      margin: 16px auto;
+      padding: 18px;
+      border-radius: 16px;
+      font-size: 20px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    /* HOVER */
+    .btn:hover {
+      transform: scale(1.07);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    /* POP ANIMATO AL CLICK */
+    .btn:active {
+      transform: scale(0.90);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.20);
+    }
+
+    /* TikTok */
+    .tiktok {
+      background: #000;
+      border: 2px solid #000;
+    }
+
+    /* Instagram */
+    .instagram {
+      background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5);
+      border: 2px solid #962fbf;
+    }
+
+    /* Shop */
+    .shop {
+      background: #1a1a1a;
+      border: 2px solid #1a1a1a;
+    }
+
+    .iconify {
+      font-size: 28px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>G‑START LINK</h1>
+
+  <!-- TikTok -->
+  <a class="btn tiktok" href="https://www.tiktok.com/@gstartshop" target="_blank">
+    <span class="iconify" data-icon="simple-icons:tiktok"></span>
+    TikTok
+  </a>
+
+  <!-- Instagram -->
+  <a class="btn instagram" href="https://www.instagram.com/gstart.store/" target="_blank">
+    <span class="iconify" data-icon="mdi:instagram"></span>
+    Instagram
+  </a>
+
+  <!-- Shopify Store -->
+  <a class="btn shop" href="https://gstartstore.it/" target="_blank">
+    <span class="iconify" data-icon="mdi:cart"></span>
+    Shop Online
+  </a>
+
+</body>
+</html>
